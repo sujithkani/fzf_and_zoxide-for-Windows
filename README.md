@@ -58,8 +58,8 @@ notepad $PROFILE
 In the opened PROFILE of your powershell, enter:
 
 ```notepad
-Invoke-Expression (& { (zoxide init powershell | Out-String) })
-function cd { z @args }
+Invoke-Expression (&{(zoxide init powershell | Out-String)})
+function cd {z @args}
 Set-Alias j z
 ```
 Save and close this file. Apply the change in the Shell:
